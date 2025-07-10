@@ -14,22 +14,19 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter 기본형'),
+      home: const MyHomePage(title: 'Flutter기본형'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
   final String title;
-
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,13 +46,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  ElevatedButton(onPressed: () {}, child: const Text('Button1')),
+                  ElevatedButton(onPressed:(){}, child: Text('Button1')),
                   // SizedBox(width: 10,),
                   // Spacer(flex: 1,),
-                  ElevatedButton(onPressed: () {}, child: const Text('Button2')),
+                  ElevatedButton(onPressed:(){}, child: Text('Button2')),
                   // SizedBox(width: 10,),
                   // Spacer(flex: 2,),
-                  ElevatedButton(onPressed: () {}, child: const Text('Button3')),
+                  ElevatedButton(onPressed:(){}, child: Text('Button3')),
                 ],
               ),
             ),
@@ -70,19 +67,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  ElevatedButton(onPressed: () {}, child: const Text('Button1')),
+                  ElevatedButton(onPressed:(){}, child: Text('Button1')),
                   // SizedBox(width: 10,),
                   // Spacer(flex: 1,),
-                  ElevatedButton(onPressed: () {}, child: const Text('Button2')),
+                  ElevatedButton(onPressed:(){}, child: Text('Button2')),
                   // SizedBox(width: 10,),
                   // Spacer(flex: 2,),
-                  ElevatedButton(onPressed: () {}, child: const Text('Button3')),
+                  ElevatedButton(onPressed:(){}, child: Text('Button3')),
                 ],
               ),
             ),
           ),
         ],
-      )
+      ) 
+      
+
     );
   }
 }
